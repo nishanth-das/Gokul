@@ -21,8 +21,8 @@ export default function Navbar({ cartCount, onOpenCart }: NavbarProps) {
             className="h-9 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
           />
           <div className="flex flex-col">
-            <span className="text-[10px] sm:text-[11px] tracking-[0.2em] uppercase text-[#e5c98d] font-bold leading-tight">
-              Vegetarian
+            <span className="text-[10px] sm:text-[11px] tracking-[0.16em] uppercase text-[#e5c98d] font-bold leading-tight">
+              Gokul Veg
             </span>
             <span className="text-[8px] sm:text-[9px] tracking-[0.14em] uppercase text-emerald-200/70 font-medium">
               Agartala
