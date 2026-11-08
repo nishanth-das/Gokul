@@ -3,15 +3,15 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gokulveg.pages.dev'),
-  title: 'Gokul Veg Restaurant | Royal Pure Vegetarian Dining | Agartala',
-  description: 'ISO 9001:2015 & FSSAI certified premier pure vegetarian restaurant in Agartala. 150+ delicacies, clay tandoor starters, royal paneer specialities, and 20-30 min express delivery.',
-  keywords: ['Gokul Veg Restaurant', 'Agartala veg restaurant', 'pure veg Agartala', 'Tripura pure veg', 'Shaam Savera', 'vegetarian banquets', 'chaat bazaar'],
+  title: 'Gokul Veg Restaurant | Royal Vegetarian Dining | Agartala',
+  description: 'ISO 9001:2015 & FSSAI certified premier vegetarian restaurant in Agartala. 150+ delicacies, clay tandoor starters, royal paneer specialities, and 20-30 min express delivery.',
+  keywords: ['Gokul Veg Restaurant', 'Agartala veg restaurant', 'veg restaurant Agartala', 'Tripura veg restaurant', 'Shaam Savera', 'vegetarian banquets', 'chaat bazaar'],
   authors: [{ name: 'Local Rank India', url: 'https://localrankindia.com/' }],
   creator: 'Local Rank India',
   publisher: 'Local Rank India',
   openGraph: {
-    title: 'Gokul Veg Restaurant | Royal Pure Vegetarian Dining | Agartala',
-    description: 'ISO 9001:2015 & FSSAI certified premier pure vegetarian restaurant in Agartala. 150+ delicacies with 20-30 min express dispatch.',
+    title: 'Gokul Veg Restaurant | Royal Vegetarian Dining | Agartala',
+    description: 'ISO 9001:2015 & FSSAI certified premier vegetarian restaurant in Agartala. 150+ delicacies with 20-30 min express dispatch.',
     url: 'https://gokulveg.pages.dev',
     siteName: 'Gokul Veg Restaurant',
     images: [{ url: '/1.png' }],
@@ -36,7 +36,6 @@ export default function RootLayout({
           rel="stylesheet"
         />
 
-        {/* Schema.org Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -60,7 +59,7 @@ export default function RootLayout({
                 longitude: 91.2868,
               },
               telephone: '+918732024422',
-              servesCuisine: ['North Indian', 'South Indian', 'Pure Vegetarian', 'Chaat', 'Tandoori'],
+              servesCuisine: ['North Indian', 'South Indian', 'Vegetarian', 'Chaat', 'Tandoori'],
               priceRange: '₹20 - ₹399',
             }),
           }}

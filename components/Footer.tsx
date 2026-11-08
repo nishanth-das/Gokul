@@ -10,13 +10,13 @@ export default function Footer() {
             <div className="mb-3">
               <img
                 src="/gokul-logo.png"
-                alt="Gokul Pure Veg Restaurant"
+                alt="Gokul Veg Restaurant"
                 className="h-10 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
               />
             </div>
             
             <p className="text-xs text-emerald-100/70 leading-relaxed mb-4 max-w-sm">
-              Agartala’s premier sanctuary for 151+ pure vegetarian delicacies, live clay tandoor, and 4 PM Chaat Bazaar.
+              Agartala’s premier sanctuary for 151+ vegetarian delicacies, live clay tandoor, and 4 PM Chaat Bazaar.
             </p>
 
             <div className="flex flex-wrap gap-2 text-[10px] font-semibold">

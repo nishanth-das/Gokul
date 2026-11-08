@@ -22,7 +22,7 @@ export default function BanquetsSection() {
 *Event:* ${formData.eventType}
 *Guests:* ${formData.guests}
 *Date:* ${formData.date}
-*Notes:* ${formData.notes || 'Pure Veg Catering with Live Counters'}
+*Notes:* ${formData.notes || 'Vegetarian Catering with Live Counters'}
 ----------------------------------------
 Please share customized royal banquet package rates.`;
 
@@ -46,7 +46,7 @@ Please share customized royal banquet package rates.`;
             </h2>
 
             <p className="text-xs sm:text-sm text-[#5e6b66] leading-relaxed mb-6">
-              Full-service pure vegetarian catering for conferences, weddings, and private parties from 50 to 500+ guests with live tandoor and chaat counters.
+              Full-service vegetarian catering for conferences, weddings, and private parties from 50 to 500+ guests with live tandoor and chaat counters.
             </p>
 
             <div className="grid grid-cols-2 gap-3 mb-6">
@@ -98,7 +98,7 @@ Please share customized royal banquet package rates.`;
                 Request Catering Quote
               </h3>
               <p className="text-xs text-[#5e6b66] mb-4">
-                Instant customized pure-veg packages via WhatsApp.
+                Instant customized catering packages via WhatsApp.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-3">

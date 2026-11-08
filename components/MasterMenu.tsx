@@ -206,7 +206,7 @@ export default function MasterMenu({ cart, onModifyQty, onOpenSheet }: MasterMen
 
                   <div className="flex items-center justify-between border-t border-gray-200/50 pt-2.5 mt-1">
                     <span className="text-[10px] text-emerald-800/60 font-medium">
-                      Pure Veg
+                      100% Veg
                     </span>
 
                     {qty > 0 ? (

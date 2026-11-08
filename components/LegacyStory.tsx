@@ -17,17 +17,17 @@ export default function LegacyStory({ onOpenSheet }: LegacyStoryProps) {
             </div>
             
             <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#04130f] leading-snug mb-2">
-              Rooted in Tradition, Pure in Every Bite
+              Rooted in Tradition, Flavour in Every Bite
             </h2>
 
             <p className="text-xs sm:text-sm text-[#5e6b66] mb-5">
-              Pure desi ghee creations, whole stone-ground spices, and artisanal dairy. Jain preparations available on request.
+              Artisanal desi ghee creations, whole stone-ground spices, and fresh dairy. Jain preparations available on request.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
               <div className="bg-[#faf7f0] p-3 rounded-xl border border-[#c9a35e]/30 text-center sm:text-left">
                 <div className="text-xl mb-1">🧈</div>
-                <h5 className="font-bold text-[#0b3127] text-xs">Pure Desi Ghee</h5>
+                <h5 className="font-bold text-[#0b3127] text-xs">Desi Ghee</h5>
                 <p className="text-[10px] text-[#5e6b66]">Fresh malai paneer & whole spices.</p>
               </div>
 

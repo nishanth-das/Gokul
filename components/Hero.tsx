@@ -5,10 +5,10 @@ import { ArrowRight, MessageCircle, Sparkles, Zap, ShieldCheck } from 'lucide-re
 
 interface HeroProps {
   onOpenSheet: (sheetNum: number) => void;
-  onAddItem: (itemId: number) => void;
+  onAddItem?: (itemId: number) => void;
 }
 
-export default function Hero({ onOpenSheet, onAddItem }: HeroProps) {
+export default function Hero({ onOpenSheet }: HeroProps) {
   return (
     <section className="relative bg-gradient-to-br from-[#03110d] via-[#07221b] to-[#0d3b2f] text-white pt-8 pb-14 sm:py-16 lg:py-20 border-b-2 border-[#c9a35e]/30 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(201,163,94,0.12)_0%,transparent_50%)] pointer-events-none" />
@@ -19,7 +19,7 @@ export default function Hero({ onOpenSheet, onAddItem }: HeroProps) {
           
           <div className="inline-flex items-center gap-2 bg-[#c9a35e]/15 border border-[#c9a35e]/40 px-3.5 py-1 rounded-full text-[11px] sm:text-xs font-semibold text-[#e5c98d] mb-3 shadow-[0_0_15px_rgba(201,163,94,0.15)]">
             <span className="w-2 h-2 rounded-full bg-[#2ecc71] animate-beacon" />
-            <span>Pure Vegetarian Sanctuary • Agartala</span>
+            <span>Vegetarian Sanctuary • Agartala</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-2 leading-[1.15]">
@@ -27,7 +27,7 @@ export default function Hero({ onOpenSheet, onAddItem }: HeroProps) {
           </h1>
 
           <p className="text-xs sm:text-sm text-emerald-100/80 max-w-md mb-5 leading-normal">
-            151+ Pure Desi Ghee Delicacies • Live Clay Tandoor • Agartala's Iconic 4 PM Chaat Bazaar
+            151+ Desi Ghee Delicacies • Live Clay Tandoor • Agartala's Iconic 4 PM Chaat Bazaar
           </p>
 
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-6 text-[11px] font-semibold">
@@ -71,39 +71,40 @@ export default function Hero({ onOpenSheet, onAddItem }: HeroProps) {
             <div className="flex items-center justify-between border-b border-[#c9a35e]/20 pb-3 mb-3">
               <div>
                 <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-[#e5c98d]">
-                  Chef's Signature
+                  Popular Favourite
                 </span>
-                <h3 className="font-serif text-lg sm:text-xl font-bold text-white">Shaam Savera</h3>
+                <h3 className="font-serif text-lg sm:text-xl font-bold text-white">Masala Dosa & Idli Sambar</h3>
               </div>
               <span className="bg-[#04130f] text-[#e5c98d] border border-[#c9a35e] text-xs font-bold px-3 py-1 rounded-full">
-                ₹399
+                From ₹80
               </span>
             </div>
 
             <div
-              onClick={() => onOpenSheet(9)}
+              onClick={() => onOpenSheet(2)}
               className="relative h-56 sm:h-64 w-full rounded-xl overflow-hidden border border-[#c9a35e]/30 cursor-pointer bg-black"
-              title="Click to view full image in high resolution"
+              title="Click to view Breakfast Menu in high resolution"
             >
               <img
-                src="/9.png"
-                alt="Chef's Special Shaam Savera"
-                className="w-[200%] max-w-none h-full object-cover object-left transition-transform duration-700 group-hover:scale-105"
+                src="/hero-dosa-idli.png"
+                alt="Masala Dosa and Steamed Idlis with Sambar"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
 
             <div className="pt-3">
               <p className="text-xs text-emerald-100/70 mb-3 line-clamp-2">
-                Spinach dumplings stuffed with cottage cheese over velvety makhani and golden gravies.
+                Crispy golden dosa rolled over spiced potato mash, served with pillowy steamed idlis, fresh coconut chutney & hot aromatic sambar.
               </p>
               <div className="flex items-center justify-between">
-                <span className="font-serif text-xl sm:text-2xl font-bold text-[#e5c98d]">₹399/-</span>
-                <button
-                  onClick={() => onAddItem(112)}
-                  className="bg-gradient-to-r from-[#e5c98d] to-[#c9a35e] text-[#04130f] font-bold text-xs px-4 py-2 rounded-full hover:brightness-110 transition-all uppercase tracking-wide"
+                <span className="font-serif text-xl sm:text-2xl font-bold text-[#e5c98d]">₹80 - ₹120</span>
+                <a
+                  href="#menu"
+                  className="inline-flex items-center gap-1.5 text-xs text-[#e5c98d] hover:text-white font-semibold transition-colors underline underline-offset-4"
                 >
-                  + Add to Plate
-                </button>
+                  <span>Explore Menu</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
             </div>
           </div>

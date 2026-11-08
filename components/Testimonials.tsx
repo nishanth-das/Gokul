@@ -6,7 +6,7 @@ export default function Testimonials() {
     {
       stars: 5,
       quote:
-        'Gokul has set a new benchmark for vegetarian fine dining in Tripura. Their Shaam Savera is pure poetry on a plate, and the Paneer Tikka came smoking hot from the clay tandoor. Exemplary hygiene!',
+        'Gokul has set a new benchmark for vegetarian fine dining in Tripura. Their Shaam Savera is sheer poetry on a plate, and the Paneer Tikka came smoking hot from the clay tandoor. Exemplary hygiene!',
       author: 'Dr. Ananya Roy',
       role: 'Conference Delegate & Food Columnist',
     },

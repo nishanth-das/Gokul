@@ -6,7 +6,7 @@ export default function TrustStrip() {
     { icon: <Award className="w-5 h-5 text-[#9a7536]" />, title: 'ISO 9001:2015', sub: 'Audited Hygiene' },
     { icon: <ShieldCheck className="w-5 h-5 text-[#9a7536]" />, title: 'FSSAI Certified', sub: 'Lic: 22526051001035' },
     { icon: <Clock className="w-5 h-5 text-[#9a7536]" />, title: '20-30 Min Delivery', sub: 'Across Agartala' },
-    { icon: <Sparkles className="w-5 h-5 text-[#9a7536]" />, title: 'Pure Desi Ghee', sub: 'Fresh Dairy Sourcing' },
+    { icon: <Sparkles className="w-5 h-5 text-[#9a7536]" />, title: 'Desi Ghee Delicacies', sub: 'Fresh Dairy Sourcing' },
   ];
 
   return (

@@ -10,28 +10,28 @@ interface SignatureJewelsProps {
 export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJewelsProps) {
   const signatures = [
     {
-      id: 112,
-      sheet: 9,
-      badge: "CHEF'S SIGNATURE",
-      title: "Shaam Savera",
-      price: 399,
-      desc: "Spinach dumplings stuffed with cottage cheese over velvety makhani and golden gravies.",
+      id: 22,
+      sheet: 2,
+      badge: "SOUTH INDIAN HIT",
+      title: "Masala Dosa & Sambar",
+      price: 120,
+      desc: "Golden fermented crepe rolled over spiced potato mash, served with piping hot vegetable sambar & fresh chutneys.",
     },
     {
-      id: 77,
-      sheet: 6,
-      badge: "TANDOOR HIT",
-      title: "Tandoori Malai Chaap",
-      price: 349,
-      desc: "Tender soya chaap marinated with cashews, royal cream and cheese, chargrilled to perfection.",
+      id: 55,
+      sheet: 5,
+      badge: "CROWD FAVOURITE",
+      title: "Amritsari Chole Bhature",
+      price: 120,
+      desc: "Two golden puffed bhature paired with slow-simmered spiced Amritsari chickpea gravy, pickled chillies and onions.",
     },
     {
-      id: 32,
+      id: 30,
       sheet: 3,
       badge: "ROYAL PANEER",
-      title: "Paneer Lababdar",
+      title: "Paneer Butter Masala",
       price: 299,
-      desc: "Fresh cottage cheese with capsicum, onion and tomatoes in a rich velvety spiced gravy.",
+      desc: "Fresh cottage cheese cubes simmered in a velvety, buttery spiced tomato-cashew gravy with gentle whole spices.",
     },
     {
       id: 67,
@@ -39,23 +39,23 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
       badge: "DUM SPECIAL",
       title: "Hyderabadi Dum Biryani",
       price: 320,
-      desc: "Aged basmati rice layered with garden vegetables, mint, and saffron in authentic dum style.",
+      desc: "Aged basmati rice layered with garden vegetables, fresh mint, and saffron in authentic dum style.",
     },
     {
-      id: 90,
-      sheet: 8,
-      badge: "HERITAGE",
-      title: "Banarasi Dum Aloo",
+      id: 69,
+      sheet: 6,
+      badge: "CLAY TANDOOR",
+      title: "Tandoori Aloo Tikka",
       price: 249,
-      desc: "Golden baby potatoes simmered in a sweet-and-spicy gravy enriched with dried fruits.",
+      desc: "Scooped potatoes delicately seasoned with chatpata spices, chargrilled to smoky tenderness in traditional clay tandoor.",
     },
     {
-      id: 135,
-      sheet: 10,
-      badge: "4 PM KING",
-      title: "King Raj Kachori",
-      price: 99,
-      desc: "Crisp giant sphere stuffed with sprouts, dahi bhalla, sweet curd, chutneys and pomegranate.",
+      id: 112,
+      sheet: 9,
+      badge: "CHEF'S SIGNATURE",
+      title: "Shaam Savera",
+      price: 399,
+      desc: "Velvety spinach dumplings stuffed with cottage cheese over an artistic duo of silky tomato makhani and golden gravies.",
     },
   ];
 
@@ -65,11 +65,11 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
         <div className="text-center max-w-xl mx-auto mb-8 sm:mb-12">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-[#9a7536] mb-1">
             <span>♦</span>
-            <span>Chef's Masterpieces</span>
+            <span>Bestselling Delicacies</span>
             <span>♦</span>
           </div>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#04130f]">
-            Royal Crown Jewels
+            Agartala's Iconic Bestsellers
           </h2>
           <div className="w-12 h-0.5 bg-[#c9a35e] mx-auto mt-2" />
         </div>

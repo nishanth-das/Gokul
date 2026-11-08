@@ -34,7 +34,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 1, name: "Chai", category: "breakfast", price: 20, desc: "Traditional aromatic Indian spiced milk tea freshly brewed to perfection.", tags: ["Hot", "Bestseller"], sheet: 2 },
   { id: 2, name: "Coffee", category: "breakfast", price: 30, desc: "Rich and invigorating freshly brewed filter style coffee.", tags: ["Hot"], sheet: 2 },
   { id: 3, name: "Poha Indori", category: "breakfast", price: 50, desc: "Authentic Indori flattened rice tempered with mustard, peanuts, fennel seeds, and crisp sev.", tags: ["Signature", "Bestseller"], sheet: 2 },
-  { id: 4, name: "Milk", category: "breakfast", price: 50, desc: "Steaming hot pure farm milk served sweetened or plain.", tags: ["Hot"], sheet: 2 },
+  { id: 4, name: "Milk", category: "breakfast", price: 50, desc: "Steaming hot fresh farm milk served sweetened or plain.", tags: ["Hot"], sheet: 2 },
   { id: 5, name: "Bread Butter", category: "breakfast", price: 50, desc: "Fresh soft bread slices served with generous creamy butter.", tags: ["Quick Bite"], sheet: 2 },
   { id: 6, name: "Upma", category: "breakfast", price: 50, desc: "Traditional South Indian roasted semolina tempered with curry leaves, mustard seeds and vegetables.", tags: ["Healthy"], sheet: 2 },
   { id: 7, name: "Plain Paratha with Dahi", category: "breakfast", price: 60, desc: "Golden pan-toasted layered flatbread served with fresh chilled sweetened dahi.", tags: ["Comfort"], sheet: 2 },
@@ -43,7 +43,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 10, name: "Bread Butter Jam", category: "breakfast", price: 70, desc: "Classic bread slices layered with rich butter and fruit jam.", tags: ["Kids Favourite"], sheet: 2 },
   { id: 11, name: "Bread Butter Toast", category: "breakfast", price: 70, desc: "Golden crisp toasted bread generously smothered with creamy butter.", tags: ["Crisp"], sheet: 2 },
   { id: 12, name: "Daal Bada", category: "breakfast", price: 80, desc: "Crispy fried lentil fritters seasoned with ginger and green chillies, served with coconut chutney.", tags: ["Crisp"], sheet: 2 },
-  { id: 13, name: "Aloo Paratha", category: "breakfast", price: 80, desc: "Classic Punjabi paratha stuffed with hearty spiced mashed potatoes, roasted with pure ghee/butter.", tags: ["Bestseller"], sheet: 2 },
+  { id: 13, name: "Aloo Paratha", category: "breakfast", price: 80, desc: "Classic Punjabi paratha stuffed with hearty spiced mashed potatoes, roasted with golden ghee/butter.", tags: ["Bestseller"], sheet: 2 },
   { id: 14, name: "Paneer Paratha", category: "breakfast", price: 80, desc: "Flaky paratha loaded with freshly grated malai paneer, herbs, and mild ground spices.", tags: ["Chef's Pick"], sheet: 2 },
   { id: 15, name: "Puri Bhaji", category: "breakfast", price: 80, desc: "Fluffy golden deep-fried puris served with piping hot spiced potato bhaji gravy.", tags: ["Bestseller"], sheet: 2 },
   { id: 16, name: "Bedai Sabji", category: "breakfast", price: 80, desc: "Crisp puffed urad dal stuffed puris served with Agra-style zesty potato dubki curry.", tags: ["Heritage Special"], sheet: 2 },
@@ -56,7 +56,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 23, name: "Cheese Paratha", category: "breakfast", price: 120, desc: "Indulgent flatbread stuffed with molten processed cheese and gentle herbs.", tags: ["Kids Special"], sheet: 2 },
   { id: 24, name: "Paneer Dosa", category: "breakfast", price: 150, desc: "Crispy golden crepe generously spread with seasoned grated paneer and South Indian spice butter.", tags: ["Chef's Pick"], sheet: 2 },
   { id: 25, name: "Paneer Masala Dosa", category: "breakfast", price: 170, desc: "Deluxe crepe filled with spiced potato masala and rich crumbled paneer stuffing.", tags: ["Deluxe"], sheet: 2 },
-  { id: 26, name: "Butter Masala Dosa", category: "breakfast", price: 170, desc: "Crisp dosa roasted in pure melted butter with aromatic spiced potato mash.", tags: ["Rich & Buttery"], sheet: 2 },
+  { id: 26, name: "Butter Masala Dosa", category: "breakfast", price: 170, desc: "Crisp dosa roasted in golden melted butter with aromatic spiced potato mash.", tags: ["Rich & Buttery"], sheet: 2 },
   { id: 27, name: "Cheese Masala Dosa", category: "breakfast", price: 180, desc: "Golden dosa layered with gooey melted cheese over aromatic potato masala.", tags: ["Indulgent"], sheet: 2 },
   { id: 28, name: "Veg Cheese Grilled Sandwich", category: "breakfast", price: 120, desc: "Golden-grilled sandwich loaded with diced garden veggies and bubbling melted cheese.", tags: ["Snack"], sheet: 2 },
   { id: 29, name: "Paneer Tandoori Sandwich", category: "breakfast", price: 149, desc: "Grilled club sandwich layered with smoky tandoor-spiced paneer chunks and mint mayonnaise.", tags: ["Chef's Pick"], sheet: 2 },
@@ -83,7 +83,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 46, name: "Boondi Raita", category: "khichdi-raita", price: 99, desc: "Chilled whipped yoghurt blended with delicate crispy boondi and lightly seasoned with roasted cumin and mint.", tags: ["Cooling"], sheet: 4 },
   { id: 47, name: "Vegetable Raita", category: "khichdi-raita", price: 99, desc: "Chilled yoghurt combined with freshly diced cucumber, tomatoes, onions, and delicately seasoned spices.", tags: ["Cooling", "Healthy"], sheet: 4 },
   { id: 48, name: "Pineapple Raita", category: "khichdi-raita", price: 99, desc: "Creamy chilled yoghurt complemented by the delicate sweetness of fresh diced pineapple and roasted spices.", tags: ["Sweet & Savoury"], sheet: 4 },
-  { id: 49, name: "Punjabi Khichdi", category: "khichdi-raita", price: 150, desc: "Comforting rice and yellow moong lentils slow-cooked in the traditional Punjabi style with pure desi ghee.", tags: ["Comfort Food", "Soulful"], sheet: 4 },
+  { id: 49, name: "Punjabi Khichdi", category: "khichdi-raita", price: 150, desc: "Comforting rice and yellow moong lentils slow-cooked in the traditional Punjabi style with fragrant desi ghee.", tags: ["Comfort Food", "Soulful"], sheet: 4 },
   { id: 50, name: "Masala Khichdi", category: "khichdi-raita", price: 150, desc: "Rice and lentils cooked together with aromatic warming spices for a hearty, flavourful finish.", tags: ["Spiced Comfort"], sheet: 4 },
   { id: 51, name: "Vegetable Khichdi", category: "khichdi-raita", price: 150, desc: "Rice and lentils slow-cooked with wholesome garden vegetables, green peas, carrots, and delicate spices.", tags: ["Wholesome"], sheet: 4 },
   { id: 52, name: "Cheese Masala Khichdi", category: "khichdi-raita", price: 150, desc: "Comforting rice and lentils cooked with aromatic spices and finished with generous melted cheese.", tags: ["Fusion Favourite"], sheet: 4 },
@@ -120,7 +120,7 @@ export const MENU_ITEMS: MenuItem[] = [
 
   // --- ROTI, NAAN & KULCHA (Page 7) ---
   { id: 79, name: "Plain Roti", category: "breads", price: 30, desc: "Traditional whole wheat Indian flatbread, freshly rolled and baked in the tandoor to perfection.", tags: ["Healthy"], sheet: 7 },
-  { id: 80, name: "Butter Roti", category: "breads", price: 40, desc: "Traditional Indian flatbread finished with a delicate brush of pure melting butter.", tags: ["Classic"], sheet: 7 },
+  { id: 80, name: "Butter Roti", category: "breads", price: 40, desc: "Traditional Indian flatbread finished with a delicate brush of rich melting butter.", tags: ["Classic"], sheet: 7 },
   { id: 81, name: "Missi Roti", category: "breads", price: 50, desc: "A rustic Indian flatbread made with seasoned gram flour, whole wheat, ajwain and herbs, cooked to wholesome perfection.", tags: ["Rajasthani Classic"], sheet: 7 },
   { id: 82, name: "Plain Naan", category: "breads", price: 60, desc: "Soft and pillowy leavened Indian artisan bread, freshly slapped onto clay tandoor walls.", tags: ["Tandoori Bread"], sheet: 7 },
   { id: 83, name: "Butter Naan", category: "breads", price: 70, desc: "Soft tandoor-baked naan generously slathered with melted butter.", tags: ["Bestseller"], sheet: 7 },
@@ -202,7 +202,7 @@ export const MENU_ITEMS: MenuItem[] = [
 
 export const RESTAURANT_CONFIG = {
   name: "Gokul Veg Restaurant",
-  tagline: "Royal Pure Vegetarian Dining & Chaat Confectionery",
+  tagline: "Royal Vegetarian Dining & Chaat Confectionery",
   subtitle: "We Use Onion & Garlic | Jain Preparations Available",
   phone: "+91 8732-024422",
   phoneRaw: "918732024422",
@@ -211,7 +211,7 @@ export const RESTAURANT_CONFIG = {
   certifications: [
     { label: "ISO 9001:2015", desc: "Quality Management System Certified" },
     { label: "FSSAI License", desc: "Lic. No. 22526051001035" },
-    { label: "100% Pure Veg", desc: "Finest Sourced Dairy & Desi Ghee" },
+    { label: "100% Vegetarian", desc: "Finest Sourced Dairy & Desi Ghee" },
     { label: "Express Dispatch", desc: "Hot 20-30 Min City Delivery" },
   ],
   gallery: [
