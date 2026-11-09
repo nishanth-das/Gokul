@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <div className="mb-3">
               <img
-                src="/gokul-logo.png"
+                src="/GokulPure_New_logo.png"
                 alt="Gokul Veg Restaurant"
-                className="h-10 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
+                className="h-11 sm:h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
               />
             </div>
             

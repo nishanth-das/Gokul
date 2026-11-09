@@ -77,9 +77,9 @@ export default function CartDrawer({
         <div className="bg-gradient-to-r from-[#0b3127] to-[#071f18] text-white p-4 flex items-center justify-between border-b-2 border-[#c9a35e]">
           <div className="flex items-center gap-2.5">
             <img
-              src="/gokul-logo-gold.png"
+              src="/GokulPure_New_logo.png"
               alt="Gokul Logo"
-              className="h-8 w-auto object-contain"
+              className="h-9 w-auto object-contain drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
             />
             <div>
               <h3 className="font-serif text-base font-bold text-[#e5c98d]">Your Plate</h3>

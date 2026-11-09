@@ -16,9 +16,9 @@ export default function Navbar({ cartCount, onOpenCart }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
           <img
-            src="/gokul-logo.png"
+            src="/GokulPure_New_logo.png"
             alt="Gokul Veg Restaurant"
-            className="h-9 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
+            className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
           />
           <div className="flex flex-col">
             <span className="text-[10px] sm:text-[11px] tracking-[0.16em] uppercase text-[#e5c98d] font-bold leading-tight">

@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/gokul-logo.png" type="image/png" />
+        <link rel="icon" href="/GokulPure_New_logo.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -43,8 +43,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Restaurant',
               name: 'Gokul Veg Restaurant',
-              image: '/gokul-logo.png',
-              logo: '/gokul-logo.png',
+              image: '/GokulPure_New_logo.png',
+              logo: '/GokulPure_New_logo.png',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: 'Chitta Ranjan Road',
