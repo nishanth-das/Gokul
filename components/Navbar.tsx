@@ -14,20 +14,15 @@ export default function Navbar({ cartCount, onOpenCart }: NavbarProps) {
   return (
     <header className="sticky top-0 z-40 bg-[#071f18]/95 backdrop-blur-md border-b border-[#c9a35e]/25">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 group">
+        <a href="#" className="flex items-center gap-2.5 sm:gap-3 group">
           <img
             src="/GokulPure_New_logo.png"
-            alt="Gokul Veg Restaurant"
+            alt="Gokul Veg Agartala"
             className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
           />
-          <div className="flex flex-col">
-            <span className="text-[10px] sm:text-[11px] tracking-[0.16em] uppercase text-[#e5c98d] font-bold leading-tight">
-              Gokul Veg
-            </span>
-            <span className="text-[8px] sm:text-[9px] tracking-[0.14em] uppercase text-emerald-200/70 font-medium">
-              Agartala
-            </span>
-          </div>
+          <span className="text-[11px] sm:text-xs tracking-[0.25em] uppercase text-[#e5c98d] font-semibold border-l border-[#c9a35e]/30 pl-2.5 sm:pl-3">
+            Agartala
+          </span>
         </a>
 
         <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-emerald-100/80">
