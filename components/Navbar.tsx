@@ -26,6 +26,7 @@ export default function Navbar({ cartCount, onOpenCart }: NavbarProps) {
         </a>
 
         <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-emerald-100/80">
+          <a href="#" className="hover:text-white transition-colors">Home</a>
           <a href="#menu" className="hover:text-white transition-colors">Menu (151)</a>
           <a href="#signatures" className="hover:text-white transition-colors">Signatures</a>
           <a href="#legacy" className="hover:text-white transition-colors">About</a>
@@ -68,6 +69,7 @@ export default function Navbar({ cartCount, onOpenCart }: NavbarProps) {
 
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#071f18] border-b border-[#c9a35e]/30 px-6 py-5 flex flex-col gap-3 text-sm font-medium text-emerald-100">
+          <a href="#" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Home</a>
           <a href="#menu" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Master Menu (151 Items)</a>
           <a href="#signatures" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Chef's Signatures</a>
           <a href="#menu-sheets" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Official Menu Book (11 Sheets)</a>

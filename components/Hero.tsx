@@ -19,7 +19,7 @@ export default function Hero({ onOpenSheet }: HeroProps) {
           
           <div className="inline-flex items-center gap-2 bg-[#c9a35e]/15 border border-[#c9a35e]/40 px-3.5 py-1 rounded-full text-[11px] sm:text-xs font-semibold text-[#e5c98d] mb-3 shadow-[0_0_15px_rgba(201,163,94,0.15)]">
             <span className="w-2 h-2 rounded-full bg-[#2ecc71] animate-beacon" />
-            <span>Gokul Veg Agartala</span>
+            <span>Gokul Veg Restaurant Agartala</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-2 leading-[1.15]">
