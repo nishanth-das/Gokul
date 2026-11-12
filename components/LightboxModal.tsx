@@ -56,7 +56,7 @@ export default function LightboxModal({
 
         <div className="w-full max-h-[75vh] flex items-center justify-center overflow-hidden rounded-2xl border-2 border-[#c9a35e] bg-black shadow-2xl">
           <img
-            src={`/${currentSheet}.png`}
+            src={`/${currentSheet}.webp`}
             alt={sheetData?.title || `Menu Sheet ${currentSheet}`}
             className="max-h-[75vh] w-auto object-contain"
           />

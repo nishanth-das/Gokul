@@ -5,7 +5,6 @@ import { ArrowRight, MessageCircle, Sparkles, Zap, ShieldCheck } from 'lucide-re
 
 interface HeroProps {
   onOpenSheet: (sheetNum: number) => void;
-  onAddItem?: (itemId: number) => void;
 }
 
 export default function Hero({ onOpenSheet }: HeroProps) {
@@ -27,13 +26,13 @@ export default function Hero({ onOpenSheet }: HeroProps) {
           </h1>
 
           <p className="text-xs sm:text-sm text-emerald-100/80 max-w-md mb-5 leading-normal">
-            151+ Desi Ghee Delicacies • Live Clay Tandoor • Agartala's Iconic 4 PM Chaat Bazaar
+            151+ Veg Delicacies (Prepared with Garlic & Onion) • Live Clay Tandoor • Agartala's Iconic 4 PM Chaat Bazaar
           </p>
 
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-6 text-[11px] font-semibold">
             <div className="inline-flex items-center gap-1.5 bg-[#0b3127]/80 border border-[#c9a35e]/30 px-2.5 py-1 rounded-full text-[#e5c98d]">
               <Zap className="w-3 h-3 text-[#c9a35e]" />
-              <span>20-30 Min Delivery</span>
+              <span>20-30 Min Delivery (₹2,000+ • Selected Radius)</span>
             </div>
             <div className="inline-flex items-center gap-1.5 bg-[#0b3127]/80 border border-[#c9a35e]/30 px-2.5 py-1 rounded-full text-[#e5c98d]">
               <ShieldCheck className="w-3 h-3 text-[#c9a35e]" />
@@ -45,10 +44,10 @@ export default function Hero({ onOpenSheet }: HeroProps) {
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 w-full sm:w-auto">
             <a
               href="#menu"
-              className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#e5c98d] to-[#c9a35e] hover:brightness-110 text-[#04130f] font-bold px-6 py-3.5 rounded-full shadow-gold transition-all text-xs sm:text-sm uppercase tracking-wider"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#e5c98d] to-[#c9a35e] hover:brightness-110 text-[#04130f] font-bold px-6 py-3.5 rounded-full shadow-gold transition-all text-xs sm:text-sm uppercase tracking-wider"
             >
               <span>Explore 151 Dishes</span>
               <ArrowRight className="w-4 h-4" />
@@ -58,7 +57,7 @@ export default function Hero({ onOpenSheet }: HeroProps) {
               href="https://wa.me/918732024422?text=Hello%20Gokul%20Veg%20Restaurant,%20I%20would%20like%20to%20order%20delicious%20food."
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-[#25d366] hover:bg-[#20ba59] text-white px-6 py-3.5 rounded-full font-semibold shadow-lg transition-all text-xs sm:text-sm"
+              className="inline-flex items-center justify-center gap-2 bg-[#25d366] hover:bg-[#20ba59] text-white px-6 py-3.5 rounded-full font-semibold shadow-lg transition-all text-xs sm:text-sm"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp Order</span>
@@ -86,8 +85,9 @@ export default function Hero({ onOpenSheet }: HeroProps) {
               title="Click to view Breakfast Menu in high resolution"
             >
               <img
-                src="/hero-dosa-idli.png"
+                src="/hero-dosa-idli.webp"
                 alt="Masala Dosa and Steamed Idlis with Sambar"
+                fetchPriority="high"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>

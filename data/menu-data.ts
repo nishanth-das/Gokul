@@ -11,22 +11,20 @@ export interface MenuItem {
 export interface Category {
   id: string;
   name: string;
-  icon: string;
-  count?: number;
   sheet: number;
 }
 
 export const MENU_CATEGORIES: Category[] = [
-  { id: "all", name: "All Dishes", icon: "✨", sheet: 1 },
-  { id: "breakfast", name: "Breakfast (6-10 AM)", icon: "🍳", sheet: 2 },
-  { id: "starters", name: "Tandoori Starters", icon: "🍢", sheet: 6 },
-  { id: "paneer", name: "Paneer Specialities", icon: "🧀", sheet: 3 },
-  { id: "vegetables", name: "Main Course Vegetables", icon: "🥗", sheet: 8 },
-  { id: "dal-rice", name: "Dal & Rice Favourites", icon: "🍲", sheet: 5 },
-  { id: "breads", name: "Roti, Naan & Kulcha", icon: "🫓", sheet: 7 },
-  { id: "khichdi-raita", name: "Khichdi & Raita", icon: "🍚", sheet: 4 },
-  { id: "chaat", name: "Chaat Bazaar (4 PM+)", icon: "🥘", sheet: 10 },
-  { id: "beverages", name: "Beverages & Shakes", icon: "🍹", sheet: 11 },
+  { id: "all", name: "All Dishes", sheet: 1 },
+  { id: "breakfast", name: "Breakfast (6-10 AM)", sheet: 2 },
+  { id: "starters", name: "Tandoori Starters", sheet: 6 },
+  { id: "paneer", name: "Paneer Specialities", sheet: 3 },
+  { id: "vegetables", name: "Main Course Vegetables", sheet: 8 },
+  { id: "dal-rice", name: "Dal & Rice Favourites", sheet: 5 },
+  { id: "breads", name: "Roti, Naan & Kulcha", sheet: 7 },
+  { id: "khichdi-raita", name: "Khichdi & Raita", sheet: 4 },
+  { id: "chaat", name: "Chaat Bazaar (4 PM+)", sheet: 10 },
+  { id: "beverages", name: "Beverages & Shakes", sheet: 11 },
 ];
 
 export const MENU_ITEMS: MenuItem[] = [
@@ -201,19 +199,6 @@ export const MENU_ITEMS: MenuItem[] = [
 ];
 
 export const RESTAURANT_CONFIG = {
-  name: "Gokul Veg Restaurant",
-  tagline: "Royal Vegetarian Dining & Chaat Confectionery",
-  subtitle: "We Use Onion & Garlic | Jain Preparations Available",
-  phone: "+91 8732-024422",
-  phoneRaw: "918732024422",
-  address: "Chitta Ranjan Road, Agartala, Tripura",
-  deliveryTime: "20 - 30 Minutes",
-  certifications: [
-    { label: "ISO 9001:2015", desc: "Quality Management System Certified" },
-    { label: "FSSAI License", desc: "Lic. No. 22526051001035" },
-    { label: "100% Vegetarian", desc: "Finest Sourced Dairy & Desi Ghee" },
-    { label: "Express Dispatch", desc: "Hot 20-30 Min City Delivery" },
-  ],
   gallery: [
     { num: 1, title: "Cover & Credentials", desc: "ISO 9001:2015 & FSSAI certified identity with royal peacock insignia" },
     { num: 2, title: "Breakfast Delicacies", desc: "Fresh dosas, stuffed parathas, Indori poha & breakfast beverages" },

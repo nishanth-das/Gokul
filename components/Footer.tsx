@@ -9,14 +9,16 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <div className="mb-3">
               <img
-                src="/GokulPure_New_logo.png"
+                src="/gokul-logo.webp"
                 alt="Gokul Veg Restaurant"
+                loading="lazy"
+                decoding="async"
                 className="h-11 sm:h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
               />
             </div>
             
             <p className="text-xs text-emerald-100/70 leading-relaxed mb-4 max-w-sm">
-              Agartala’s premier sanctuary for 151+ vegetarian delicacies, live clay tandoor, and 4 PM Chaat Bazaar.
+              Agartala’s premier vegetarian restaurant serving 151+ delicacies (prepared with fresh garlic & onion), live clay tandoor, and 4 PM Chaat Bazaar.
             </p>
 
             <div className="flex flex-wrap gap-2 text-[10px] font-semibold">
@@ -31,13 +33,13 @@ export default function Footer() {
 
           <div className="lg:col-span-3">
             <h5 className="font-serif text-xs font-bold text-white uppercase tracking-wider mb-3 border-l-2 border-[#c9a35e] pl-2">
-              Menu Categories
+              Quick Links
             </h5>
             <ul className="space-y-1.5 text-xs text-emerald-100/70">
-              <li><a href="#menu" className="hover:text-[#e5c98d] transition-colors">Breakfast (6-10 AM)</a></li>
-              <li><a href="#menu" className="hover:text-[#e5c98d] transition-colors">Tandoori Starters</a></li>
-              <li><a href="#menu" className="hover:text-[#e5c98d] transition-colors">Paneer Specialities</a></li>
-              <li><a href="#menu" className="hover:text-[#e5c98d] transition-colors">Chaat Bazaar (4 PM+)</a></li>
+              <li><a href="/#menu" className="hover:text-[#e5c98d] transition-colors">Master Menu (151 Items)</a></li>
+              <li><a href="/#signatures" className="hover:text-[#e5c98d] transition-colors">Agartala&apos;s Bestsellers</a></li>
+              <li><a href="/gallery/" className="hover:text-[#e5c98d] transition-colors">Photo Gallery</a></li>
+              <li><a href="/#banquets" className="hover:text-[#e5c98d] transition-colors">Banquets &amp; Catering</a></li>
             </ul>
           </div>
 
@@ -58,7 +60,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#c9a35e] shrink-0" />
-                <span>20 - 30 Mins Express Dispatch</span>
+                <span>20-30 Min Delivery (₹2,000+ • Selected Radius)</span>
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
       badge: "SOUTH INDIAN HIT",
       title: "Masala Dosa & Sambar",
       price: 120,
-      image: "/bestseller-dosa.png",
+      image: "/bestseller-dosa.webp",
       desc: "Golden fermented crepe rolled over spiced potato mash, served with piping hot vegetable sambar & fresh chutneys.",
     },
     {
@@ -24,7 +24,7 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
       badge: "CROWD FAVOURITE",
       title: "Amritsari Chole Bhature",
       price: 120,
-      image: "/bestseller-chole.png",
+      image: "/bestseller-chole.webp",
       desc: "Two golden puffed bhature paired with slow-simmered spiced Amritsari chickpea gravy, pickled chillies and onions.",
     },
     {
@@ -33,7 +33,7 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
       badge: "ROYAL PANEER",
       title: "Paneer Butter Masala",
       price: 299,
-      image: "/bestseller-paneer.png",
+      image: "/bestseller-paneer.webp",
       desc: "Fresh cottage cheese cubes simmered in a velvety, buttery spiced tomato-cashew gravy with gentle whole spices.",
     },
     {
@@ -42,7 +42,7 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
       badge: "DUM SPECIAL",
       title: "Hyderabadi Dum Biryani",
       price: 320,
-      image: "/bestseller-biryani.png",
+      image: "/bestseller-biryani.webp",
       desc: "Aged basmati rice layered with garden vegetables, fresh mint, and saffron in authentic dum style.",
     },
     {
@@ -51,7 +51,7 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
       badge: "CLAY TANDOOR",
       title: "Tandoori Aloo Tikka",
       price: 249,
-      image: "/bestseller-aloo.png",
+      image: "/bestseller-aloo.webp",
       desc: "Scooped potatoes delicately seasoned with chatpata spices, chargrilled to smoky tenderness in traditional clay tandoor.",
     },
     {
@@ -60,7 +60,7 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
       badge: "HERITAGE ICON",
       title: "Traditional Litti Chokha",
       price: 60,
-      image: "/bestseller-litti.png",
+      image: "/bestseller-litti.webp",
       desc: "Traditional baked wheat dumplings stuffed with spiced sattu, served with rustic roasted brinjal and tomato chokha.",
     },
   ];
@@ -94,6 +94,8 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
                 <img
                   src={sig.image}
                   alt={sig.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <span className="absolute top-3 left-3 bg-[#071f18]/90 backdrop-blur-sm text-[#e5c98d] border border-[#c9a35e]/40 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">

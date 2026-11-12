@@ -15,7 +15,7 @@ export default function BanquetsSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `🦚 *BANQUET & CATERING INQUIRY - GOKUL*
+    const text = `*BANQUET & CATERING INQUIRY - GOKUL*
 ----------------------------------------
 *Organizer:* ${formData.name || 'Guest'}
 *Contact:* ${formData.phone}

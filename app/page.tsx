@@ -10,6 +10,7 @@ import MasterMenu from '@/components/MasterMenu';
 import MenuBookGallery from '@/components/MenuBookGallery';
 import BanquetsSection from '@/components/BanquetsSection';
 import Testimonials from '@/components/Testimonials';
+import GalleryGlimpse from '@/components/GalleryGlimpse';
 import HoursLocation from '@/components/HoursLocation';
 import Footer from '@/components/Footer';
 import FloatingPlateBar from '@/components/FloatingPlateBar';
@@ -48,7 +49,6 @@ export default function HomePage() {
 
       <Hero
         onOpenSheet={(sheetNum) => setActiveSheet(sheetNum)}
-        onAddItem={(itemId) => handleModifyQty(itemId, 1)}
       />
 
       <TrustStrip />
@@ -71,6 +71,8 @@ export default function HomePage() {
       <BanquetsSection />
 
       <Testimonials />
+
+      <GalleryGlimpse />
 
       <HoursLocation />
 

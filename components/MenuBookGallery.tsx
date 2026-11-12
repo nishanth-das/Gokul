@@ -32,8 +32,10 @@ export default function MenuBookGallery({ onOpenSheet }: MenuBookGalleryProps) {
             >
               <div className="h-32 sm:h-40 rounded-lg overflow-hidden bg-black mb-2 relative">
                 <img
-                  src={`/${sheet.num}.png`}
+                  src={`/${sheet.num}.webp`}
                   alt={sheet.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Search, RotateCcw, BookOpen, X } from 'lucide-react';
+import { Search, RotateCcw, BookOpen, X, UtensilsCrossed, Star, Award, Flame, Tag } from 'lucide-react';
 import { MENU_CATEGORIES, MENU_ITEMS } from '@/data/menu-data';
 
 interface MasterMenuProps {
@@ -67,7 +67,10 @@ export default function MasterMenu({ cart, onModifyQty, onOpenSheet }: MasterMen
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#04130f]">
             151 Authentic Dishes
           </h2>
-          <div className="w-12 h-0.5 bg-[#c9a35e] mx-auto mt-2" />
+          <p className="text-xs text-[#5e6b66] mt-2 font-medium">
+            100% Vegetarian Kitchen • Prepared with Garlic & Onion
+          </p>
+          <div className="w-12 h-0.5 bg-[#c9a35e] mx-auto mt-2.5" />
         </div>
 
         <div className="bg-[#faf7f0] border border-[#c9a35e]/30 rounded-2xl p-3 sm:p-5 mb-6 shadow-sm">
@@ -92,21 +95,22 @@ export default function MasterMenu({ cart, onModifyQty, onOpenSheet }: MasterMen
 
           <div className="flex items-center gap-1.5 overflow-x-auto pb-2 mb-2 sm:mb-3 scrollbar-none">
             {[
-              { id: 'all', label: 'All Items' },
-              { id: 'bestseller', label: '⭐ Bestsellers' },
-              { id: 'chef', label: '👑 Chef\'s Picks' },
-              { id: 'tandoor', label: '🔥 Clay Tandoor' },
-              { id: 'under100', label: '💰 Under ₹100' },
+              { id: 'all', label: 'All Items', icon: null },
+              { id: 'bestseller', label: 'Bestsellers', icon: <Star className="w-3 h-3" /> },
+              { id: 'chef', label: "Chef's Picks", icon: <Award className="w-3 h-3" /> },
+              { id: 'tandoor', label: 'Clay Tandoor', icon: <Flame className="w-3 h-3" /> },
+              { id: 'under100', label: 'Under ₹100', icon: <Tag className="w-3 h-3" /> },
             ].map((pill) => (
               <button
                 key={pill.id}
                 onClick={() => setActiveDietFilter(pill.id)}
-                className={`text-[11px] sm:text-xs font-semibold px-3 py-1.5 rounded-full border whitespace-nowrap transition-all ${activeDietFilter === pill.id
-                    ? 'bg-[#0b3127] text-white border-[#0b3127]'
-                    : 'bg-white text-[#5e6b66] border-gray-200 hover:border-[#c9a35e]'
+                className={`inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold px-3 py-2 rounded-full border whitespace-nowrap transition-all ${activeDietFilter === pill.id
+                  ? 'bg-[#0b3127] text-white border-[#0b3127]'
+                  : 'bg-white text-[#5e6b66] border-gray-200 hover:border-[#c9a35e]'
                   }`}
               >
-                {pill.label}
+                {pill.icon}
+                <span>{pill.label}</span>
               </button>
             ))}
           </div>
@@ -116,12 +120,11 @@ export default function MasterMenu({ cart, onModifyQty, onOpenSheet }: MasterMen
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`whitespace-nowrap inline-flex items-center gap-1.5 text-xs font-bold px-3 sm:px-4 py-2 rounded-full border transition-all ${activeCategory === cat.id
-                    ? 'bg-gradient-to-r from-[#0b3127] to-[#071f18] text-[#e5c98d] border-[#c9a35e] shadow-sm'
-                    : 'bg-white text-[#161e1b] border-[#c9a35e]/25 hover:border-[#c9a35e]'
+                className={`whitespace-nowrap inline-flex items-center text-xs font-bold px-3.5 sm:px-4 py-2 rounded-full border transition-all ${activeCategory === cat.id
+                  ? 'bg-gradient-to-r from-[#0b3127] to-[#071f18] text-[#e5c98d] border-[#c9a35e] shadow-sm'
+                  : 'bg-white text-[#161e1b] border-[#c9a35e]/25 hover:border-[#c9a35e]'
                   }`}
               >
-                <span>{cat.icon}</span>
                 <span>{cat.name}</span>
               </button>
             ))}
@@ -145,7 +148,7 @@ export default function MasterMenu({ cart, onModifyQty, onOpenSheet }: MasterMen
         {/* Dishes Grid */}
         {filteredItems.length === 0 ? (
           <div className="text-center py-12 bg-[#faf7f0] rounded-2xl border border-dashed border-[#c9a35e]/40 p-4">
-            <div className="text-3xl mb-2">🍃</div>
+            <UtensilsCrossed className="w-8 h-8 text-[#c9a35e] mx-auto mb-2" />
             <h4 className="font-serif text-lg font-bold text-[#04130f]">No matching dishes</h4>
             <p className="text-xs text-[#5e6b66] mb-3">Try searching for "Paneer", "Dosa", "Biryani" or reset filters.</p>
             <button
@@ -184,8 +187,8 @@ export default function MasterMenu({ cart, onModifyQty, onOpenSheet }: MasterMen
                               <span
                                 key={tIdx}
                                 className={`text-[9px] font-semibold px-1.5 py-0.5 rounded ${isChef
-                                    ? 'bg-red-50 text-red-600 border border-red-200'
-                                    : 'bg-[#c9a35e]/15 text-[#9a7536]'
+                                  ? 'bg-red-50 text-red-600 border border-red-200'
+                                  : 'bg-[#c9a35e]/15 text-[#9a7536]'
                                   }`}
                               >
                                 {tag}

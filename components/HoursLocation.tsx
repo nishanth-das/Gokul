@@ -1,12 +1,12 @@
 import React from 'react';
-import { MapPin, Phone, MessageCircle, ExternalLink } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, ExternalLink, Sunrise, Sun, UtensilsCrossed, Moon } from 'lucide-react';
 
 export default function HoursLocation() {
   const shifts = [
-    { icon: '🍳', name: 'Breakfast', hours: '6:00 AM - 10:00 AM' },
-    { icon: '🍛', name: 'Royal Lunch', hours: '11:00 AM - 3:00 PM' },
-    { icon: '🥘', name: 'Chaat Bazaar', hours: '4:00 PM Onwards' },
-    { icon: '🌙', name: 'Royal Dinner', hours: '7:00 PM - 10:00 PM' },
+    { icon: <Sunrise className="w-5 h-5 text-[#9a7536] mx-auto mb-1.5" />, name: 'Breakfast', hours: '6:00 AM - 10:00 AM' },
+    { icon: <Sun className="w-5 h-5 text-[#9a7536] mx-auto mb-1.5" />, name: 'Royal Lunch', hours: '11:00 AM - 3:00 PM' },
+    { icon: <UtensilsCrossed className="w-5 h-5 text-[#9a7536] mx-auto mb-1.5" />, name: 'Chaat Bazaar', hours: '4:00 PM Onwards' },
+    { icon: <Moon className="w-5 h-5 text-[#9a7536] mx-auto mb-1.5" />, name: 'Royal Dinner', hours: '7:00 PM - 10:00 PM' },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function HoursLocation() {
               key={idx}
               className="bg-white border border-[#c9a35e]/30 rounded-xl p-3 sm:p-4 text-center shadow-sm"
             >
-              <div className="text-2xl mb-1">{s.icon}</div>
+              <div>{s.icon}</div>
               <h4 className="font-serif text-xs sm:text-sm font-bold text-[#0b3127]">{s.name}</h4>
               <div className="text-[11px] font-bold text-[#9a7536] mt-0.5">{s.hours}</div>
             </div>
@@ -90,7 +90,7 @@ export default function HoursLocation() {
               Central Agartala Location
             </h4>
             <p className="text-xs text-emerald-100/70 leading-relaxed">
-              Dine-in AC hall, takeaway counter, and rapid 20-30 min city delivery.
+              Dine-in AC hall, takeaway counter, and 20-30 min express delivery on orders of ₹2,000+ within selected radius.
             </p>
           </div>
         </div>

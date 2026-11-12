@@ -4,17 +4,17 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://gokulveg.pages.dev'),
   title: 'Gokul Veg Restaurant | Royal Vegetarian Dining | Agartala',
-  description: 'ISO 9001:2015 & FSSAI certified premier vegetarian restaurant in Agartala. 150+ delicacies, clay tandoor starters, royal paneer specialities, and 20-30 min express delivery.',
+  description: 'ISO 9001:2015 & FSSAI certified premier vegetarian restaurant in Agartala. 150+ delicacies, clay tandoor starters, royal paneer specialities, and 20-30 min express delivery on orders ₹2,000+ within selected radius.',
   keywords: ['Gokul Veg Restaurant', 'Agartala veg restaurant', 'veg restaurant Agartala', 'Tripura veg restaurant', 'Shaam Savera', 'vegetarian banquets', 'chaat bazaar'],
   authors: [{ name: 'Local Rank India', url: 'https://localrankindia.com/' }],
   creator: 'Local Rank India',
   publisher: 'Local Rank India',
   openGraph: {
     title: 'Gokul Veg Restaurant | Royal Vegetarian Dining | Agartala',
-    description: 'ISO 9001:2015 & FSSAI certified premier vegetarian restaurant in Agartala. 150+ delicacies with 20-30 min express dispatch.',
+    description: 'ISO 9001:2015 & FSSAI certified premier vegetarian restaurant in Agartala. 150+ delicacies with 20-30 min delivery on orders ₹2,000+ within selected radius.',
     url: 'https://gokulveg.pages.dev',
     siteName: 'Gokul Veg Restaurant',
-    images: [{ url: '/1.png' }],
+    images: [{ url: '/1.webp' }],
     locale: 'en_IN',
     type: 'website',
   },
@@ -28,11 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/GokulPure_New_logo.png" type="image/png" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
 
@@ -43,8 +43,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Restaurant',
               name: 'Gokul Veg Restaurant',
-              image: '/GokulPure_New_logo.png',
-              logo: '/GokulPure_New_logo.png',
+              image: '/gokul-logo.webp',
+              logo: '/gokul-logo.webp',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: 'Chitta Ranjan Road',

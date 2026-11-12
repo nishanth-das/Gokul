@@ -20,7 +20,7 @@ export default function Testimonials() {
     {
       stars: 5,
       quote:
-        'The 4 PM Chaat Bazaar is heaven! The Raj Kachori is huge, stuffed with fresh curd and chutneys, and the Pani Puri water has that unmistakable fresh mint punch. The 20-30 minute delivery never fails.',
+        'The 4 PM Chaat Bazaar is heaven! The Raj Kachori is huge, stuffed with fresh curd and chutneys, and the Pani Puri water has that unmistakable fresh mint punch. Always fresh, hygienic, and full of authentic flavour.',
       author: 'Pooja Sen',
       role: 'Local Agartala Resident',
     },

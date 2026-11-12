@@ -27,7 +27,6 @@ const config: Config = {
       },
       fontFamily: {
         serif: ["'Playfair Display'", "Georgia", "serif"],
-        cormorant: ["'Cormorant Garamond'", "Georgia", "serif"],
         sans: ["'Plus Jakarta Sans'", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
       },
       boxShadow: {
