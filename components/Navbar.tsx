@@ -51,7 +51,7 @@ export default function Navbar({ cartCount = 0, onOpenCart }: NavbarProps) {
               className="relative inline-flex items-center gap-1.5 bg-gradient-to-r from-[#e5c98d] to-[#c9a35e] hover:brightness-110 text-[#04130f] px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold text-xs sm:text-sm shadow-gold transition-all"
             >
               <ShoppingBag className="w-4 h-4" />
-              <span>Plate</span>
+              <span>Cart</span>
               {cartCount > 0 && (
                 <span className="w-5 h-5 rounded-full bg-red-600 text-white text-[11px] font-bold flex items-center justify-center animate-bounce">
                   {cartCount}

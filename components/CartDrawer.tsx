@@ -36,7 +36,7 @@ export default function CartDrawer({
 
   const handleWhatsAppCheckout = () => {
     if (entries.length === 0) {
-      alert('Please add at least one dish to your plate.');
+      alert('Please add at least one dish to your cart before ordering.');
       return;
     }
 
@@ -91,7 +91,7 @@ export default function CartDrawer({
               className="h-9 w-auto object-contain drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
             />
             <div>
-              <h3 className="font-serif text-base font-bold text-[#e5c98d]">Your Plate</h3>
+              <h3 className="font-serif text-base font-bold text-[#e5c98d]">Your Order Cart</h3>
               <span className="text-[10px] text-emerald-100/70">20-30 Min Delivery (₹2,000+ • Selected Radius)</span>
             </div>
           </div>
@@ -108,8 +108,8 @@ export default function CartDrawer({
           {entries.length === 0 ? (
             <div className="text-center py-16 text-[#5e6b66]">
               <UtensilsCrossed className="w-8 h-8 text-[#c9a35e] mx-auto mb-2" />
-              <h4 className="font-serif text-base font-bold text-[#04130f]">Plate is empty</h4>
-              <p className="text-xs text-[#5e6b66]">Add dishes from our 151-item menu.</p>
+              <h4 className="font-serif text-base font-bold text-[#04130f]">Your cart is empty</h4>
+              <p className="text-xs text-[#5e6b66]">Add dishes from our 151-item menu to start your order.</p>
             </div>
           ) : (
             entries.map(([idStr, qty]) => {
