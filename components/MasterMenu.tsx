@@ -197,7 +197,7 @@ export default function MasterMenu({ cart, onModifyQty, onOpenSheet }: MasterMen
                           </div>
                         </div>
                       </div>
-                      <div className="font-serif text-base sm:text-lg font-bold text-[#0b3127] shrink-0">
+                      <div className="price-display font-sans text-base sm:text-lg font-bold text-[#0b3127] shrink-0 tabular-nums tracking-tight">
                         ₹{item.price}
                       </div>
                     </div>

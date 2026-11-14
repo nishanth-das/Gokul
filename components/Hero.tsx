@@ -15,7 +15,7 @@ export default function Hero({ onOpenSheet }: HeroProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
-          
+
           <div className="inline-flex items-center gap-2 bg-[#c9a35e]/15 border border-[#c9a35e]/40 px-3.5 py-1 rounded-full text-[11px] sm:text-xs font-semibold text-[#e5c98d] mb-3 shadow-[0_0_15px_rgba(201,163,94,0.15)]">
             <span className="w-2 h-2 rounded-full bg-[#2ecc71] animate-beacon" />
             <span>Gokul Veg Restaurant Agartala</span>
@@ -74,7 +74,7 @@ export default function Hero({ onOpenSheet }: HeroProps) {
                 </span>
                 <h3 className="font-serif text-lg sm:text-xl font-bold text-white">Masala Dosa & Idli Sambar</h3>
               </div>
-              <span className="bg-[#04130f] text-[#e5c98d] border border-[#c9a35e] text-xs font-bold px-3 py-1 rounded-full">
+              <span className="bg-[#04130f] text-[#e5c98d] border border-[#c9a35e] text-xs font-bold px-3 py-1 rounded-full font-sans price-display tracking-tight">
                 From ₹80
               </span>
             </div>
@@ -97,7 +97,9 @@ export default function Hero({ onOpenSheet }: HeroProps) {
                 Crispy golden dosa rolled over spiced potato mash, served with pillowy steamed idlis, fresh coconut chutney & hot aromatic sambar.
               </p>
               <div className="flex items-center justify-between">
-                <span className="font-serif text-xl sm:text-2xl font-bold text-[#e5c98d]">₹80 - ₹120</span>
+                <span className="price-display font-sans text-xl sm:text-2xl font-bold text-[#e5c98d] tracking-tight tabular-nums">
+                  ₹80 - ₹120
+                </span>
                 <a
                   href="#menu"
                   className="inline-flex items-center gap-1.5 text-xs text-[#e5c98d] hover:text-white font-semibold transition-colors underline underline-offset-4"

@@ -56,7 +56,7 @@ export default function MobileBottomNav({
           <ShoppingBag className="w-4 h-4" />
           <span>Plate</span>
           {totalCount > 0 ? (
-            <span className="bg-[#0b3127] text-[#e5c98d] px-1.5 py-0.2 rounded-full text-[10px] font-bold">
+            <span className="bg-[#0b3127] text-[#e5c98d] px-1.5 py-0.5 rounded-full text-[10px] price-display font-sans font-bold tabular-nums">
               ₹{totalPrice}
             </span>
           ) : null}

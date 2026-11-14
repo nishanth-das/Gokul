@@ -66,3 +66,13 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* Clear, highly legible, modern sans-serif price numbers */
+.price-display {
+  font-family: var(--font-sans);
+  font-variant-numeric: lining-nums tabular-nums;
+  -webkit-font-feature-settings: "lnum" 1, "tnum" 1;
+  font-feature-settings: "lnum" 1, "tnum" 1;
+  letter-spacing: -0.01em;
+}
+
+

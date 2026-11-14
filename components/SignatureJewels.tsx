@@ -113,7 +113,7 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
                 </p>
 
                 <div className="flex items-center justify-between border-t border-gray-100 pt-3 mt-auto">
-                  <span className="text-lg font-bold text-[#0b3127]">₹{sig.price}/-</span>
+                  <span className="price-display font-sans text-lg font-bold text-[#0b3127] tabular-nums tracking-tight">₹{sig.price}/-</span>
                   <button
                     onClick={() => onAddItem(sig.id)}
                     className="bg-[#0b3127] hover:bg-[#c9a35e] text-white hover:text-[#04130f] text-xs font-bold px-4 py-2 rounded-full transition-colors uppercase tracking-wider"

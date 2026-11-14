@@ -31,7 +31,7 @@ export default function FloatingPlateBar({ cart, onOpenCart }: FloatingPlateBarP
         </span>
         <div className="flex items-center gap-2 text-sm font-bold">
           <span>View Plate</span>
-          <span className="text-white">(₹{total})</span>
+          <span className="text-white price-display font-sans tabular-nums">(₹{total})</span>
         </div>
         <ChevronRight className="w-4 h-4 text-[#c9a35e]" />
       </button>

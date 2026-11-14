@@ -124,8 +124,8 @@ export default function CartDrawer({
                 >
                   <div className="flex-1 pr-2">
                     <h5 className="font-bold text-xs sm:text-sm text-[#161e1b]">{item.name}</h5>
-                    <div className="text-[11px] text-[#5e6b66]">
-                      ₹{item.price} × {qty} = <strong className="text-[#0b3127]">₹{itemTotal}</strong>
+                    <div className="text-[11px] text-[#5e6b66] font-sans">
+                      ₹{item.price} × {qty} = <strong className="text-[#0b3127] font-bold price-display tabular-nums">₹{itemTotal}</strong>
                     </div>
                   </div>
 
@@ -171,19 +171,17 @@ export default function CartDrawer({
 
             {isExpressDelivery && (
               <div
-                className={`flex items-start gap-2 rounded-lg px-2.5 py-2 text-[11px] leading-snug border ${
-                  qualifiesForExpress
+                className={`flex items-start gap-2 rounded-lg px-2.5 py-2 text-[11px] leading-snug border ${qualifiesForExpress
                     ? 'bg-emerald-50 border-emerald-200 text-emerald-900'
                     : 'bg-amber-50 border-amber-200 text-amber-900'
-                }`}
+                  }`}
               >
                 <Clock className="w-3.5 h-3.5 shrink-0 mt-0.5 text-[#9a7536]" />
                 <span>
                   {qualifiesForExpress
                     ? 'Qualifies for 20-30 min express delivery (within selected radius).'
-                    : `20-30 min delivery applies on orders of ₹2,000+ within selected radius. Add ₹${
-                        2000 - totalAmount
-                      } more to qualify.`}
+                    : `20-30 min delivery applies on orders of ₹2,000+ within selected radius. Add ₹${2000 - totalAmount
+                    } more to qualify.`}
                 </span>
               </div>
             )}
@@ -216,7 +214,7 @@ export default function CartDrawer({
             <div className="pt-2 border-t border-gray-200 text-xs text-[#5e6b66] space-y-1">
               <div className="flex justify-between font-bold text-sm text-[#0b3127]">
                 <span>Total Amount</span>
-                <span className="font-serif text-base">₹{totalAmount}</span>
+                <span className="price-display font-sans text-base font-bold text-[#0b3127] tabular-nums tracking-tight">₹{totalAmount}</span>
               </div>
             </div>
 
