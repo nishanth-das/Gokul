@@ -60,17 +60,17 @@ export default function LegacyStory({ onOpenSheet }: LegacyStoryProps) {
               title="Tandoori Starters"
             >
               <img
-                src="/6.webp"
-                alt="Gokul Royal Tandoor Starters"
+                src="/tandoor-starters-combo.jpg"
+                alt="Gokul Royal Tandoor Starters - Chargrilled Hara Bhara Kabab & Soya Malai Chaap"
                 loading="lazy"
                 decoding="async"
-                className="w-[200%] max-w-none h-full object-cover object-left transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-3 left-3 right-3 bg-[#071f18]/90 backdrop-blur-md border border-[#c9a35e] rounded-xl p-3 text-white">
                 <span className="text-[9px] uppercase tracking-wider text-[#e5c98d] font-bold">Clay Tandoor</span>
                 <h4 className="font-serif text-xs sm:text-sm font-bold text-white">
-                  Chargrilled Hara Bhara & Soya Malai Chaap
+                  Chargrilled Hara Bhara &amp; Soya Malai Chaap
                 </h4>
               </div>
             </div>
