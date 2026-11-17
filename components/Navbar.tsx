@@ -3,14 +3,18 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Phone, ShoppingBag, Menu as MenuIcon, X } from 'lucide-react';
+import { useCart } from '@/context/CartContext';
 
 interface NavbarProps {
   cartCount?: number;
   onOpenCart?: () => void;
 }
 
-export default function Navbar({ cartCount = 0, onOpenCart }: NavbarProps) {
+export default function Navbar({ cartCount, onOpenCart }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const cartContext = useCart();
+  const effectiveCartCount = cartCount ?? cartContext.cartCount;
+  const effectiveOnOpenCart = onOpenCart ?? cartContext.openCart;
 
   return (
     <header className="sticky top-0 z-40 bg-[#071f18]/95 backdrop-blur-md border-b border-[#c9a35e]/25">
@@ -28,12 +32,12 @@ export default function Navbar({ cartCount = 0, onOpenCart }: NavbarProps) {
 
         <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm font-medium text-emerald-100/80">
           <Link href="/" className="hover:text-white transition-colors">Home</Link>
-          <Link href="/#menu" className="hover:text-white transition-colors">Menu (151)</Link>
-          <Link href="/#signatures" className="hover:text-white transition-colors">Signatures</Link>
-          <Link href="/#legacy" className="hover:text-white transition-colors">About</Link>
-          <Link href="/gallery/" className="hover:text-white transition-colors">Gallery</Link>
-          <Link href="/#banquets" className="hover:text-white transition-colors">Banquets</Link>
-          <Link href="/#location" className="hover:text-white transition-colors">Contact</Link>
+          <Link href="/menu" className="hover:text-white transition-colors">Menu (151)</Link>
+          <Link href="/signatures" className="hover:text-white transition-colors">Signatures</Link>
+          <Link href="/about" className="hover:text-white transition-colors">About</Link>
+          <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
+          <Link href="/banquets" className="hover:text-white transition-colors">Banquets</Link>
+          <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
@@ -45,28 +49,18 @@ export default function Navbar({ cartCount = 0, onOpenCart }: NavbarProps) {
             <span>+91 8732-024422</span>
           </a>
 
-          {onOpenCart ? (
-            <button
-              onClick={onOpenCart}
-              className="relative inline-flex items-center gap-1.5 bg-gradient-to-r from-[#e5c98d] to-[#c9a35e] hover:brightness-110 text-[#04130f] px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold text-xs sm:text-sm shadow-gold transition-all"
-            >
-              <ShoppingBag className="w-4 h-4" />
-              <span>Cart</span>
-              {cartCount > 0 && (
-                <span className="w-5 h-5 rounded-full bg-red-600 text-white text-[11px] font-bold flex items-center justify-center animate-bounce">
-                  {cartCount}
-                </span>
-              )}
-            </button>
-          ) : (
-            <Link
-              href="/#menu"
-              className="relative inline-flex items-center gap-1.5 bg-gradient-to-r from-[#e5c98d] to-[#c9a35e] hover:brightness-110 text-[#04130f] px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold text-xs sm:text-sm shadow-gold transition-all"
-            >
-              <ShoppingBag className="w-4 h-4" />
-              <span>Order Menu</span>
-            </Link>
-          )}
+          <button
+            onClick={effectiveOnOpenCart}
+            className="relative inline-flex items-center gap-1.5 bg-gradient-to-r from-[#e5c98d] to-[#c9a35e] hover:brightness-110 text-[#04130f] px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold text-xs sm:text-sm shadow-gold transition-all"
+          >
+            <ShoppingBag className="w-4 h-4" />
+            <span>Cart</span>
+            {effectiveCartCount > 0 && (
+              <span className="w-5 h-5 rounded-full bg-red-600 text-white text-[11px] font-bold flex items-center justify-center animate-bounce">
+                {effectiveCartCount}
+              </span>
+            )}
+          </button>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -81,12 +75,12 @@ export default function Navbar({ cartCount = 0, onOpenCart }: NavbarProps) {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#071f18] border-b border-[#c9a35e]/30 px-6 py-5 flex flex-col gap-3 text-sm font-medium text-emerald-100">
           <Link href="/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Home</Link>
-          <Link href="/#menu" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Master Menu (151 Items)</Link>
-          <Link href="/#signatures" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Chef&apos;s Signatures</Link>
-          <Link href="/#legacy" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">About &amp; Founder</Link>
-          <Link href="/gallery/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Photo Gallery</Link>
-          <Link href="/#banquets" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Banquets &amp; Catering</Link>
-          <Link href="/#location" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Hours &amp; Directions</Link>
+          <Link href="/menu" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Master Menu (151 Items)</Link>
+          <Link href="/signatures" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Chef&apos;s Signatures</Link>
+          <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">About &amp; Founder</Link>
+          <Link href="/gallery" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Photo Gallery</Link>
+          <Link href="/banquets" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Banquets &amp; Catering</Link>
+          <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#c9a35e] py-1 border-b border-emerald-900/60">Hours &amp; Directions</Link>
           <a
             href="tel:+918732024422"
             className="w-full mt-2 inline-flex items-center justify-center gap-2 bg-[#c9a35e]/20 text-[#e5c98d] border border-[#c9a35e]/40 font-bold py-2.5 rounded-full text-center text-xs uppercase tracking-wider"

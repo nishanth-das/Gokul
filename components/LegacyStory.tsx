@@ -1,5 +1,6 @@
 import React from 'react';
-import { Quote, Flame, UtensilsCrossed, Building2 } from 'lucide-react';
+import Link from 'next/link';
+import { Quote, Flame, UtensilsCrossed, Building2, ArrowRight } from 'lucide-react';
 
 interface LegacyStoryProps {
   onOpenSheet: (sheetNum: number) => void;
@@ -18,9 +19,9 @@ export default function LegacyStory({ onOpenSheet }: LegacyStoryProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-[#e5c98d] mb-2">
-              <span>♦</span>
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
               <span>About Us • Heritage & Sourcing</span>
-              <span>♦</span>
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
             </div>
 
             <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-snug mb-2">
@@ -100,14 +101,24 @@ export default function LegacyStory({ onOpenSheet }: LegacyStoryProps) {
               &ldquo;Working with food has always been my deepest passion. Every recipe we craft and every plate we serve is made with honesty and care—bringing families in Agartala together over memorable vegetarian dining.&rdquo;
             </blockquote>
 
-            <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2">
-              <span className="font-serif text-sm sm:text-base font-bold text-[#e5c98d]">
-                Sanjeeb Sutradhar
-              </span>
-              <span className="hidden sm:inline text-[#c9a35e]/50">•</span>
-              <span className="text-xs text-emerald-100/75 font-medium">
-                Founder, Gokul Veg Restaurant
-              </span>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-3 mt-3 border-t border-[#c9a35e]/20">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2">
+                <span className="font-serif text-sm sm:text-base font-bold text-[#e5c98d]">
+                  Sanjeeb Sutradhar
+                </span>
+                <span className="hidden sm:inline text-[#c9a35e]/50">•</span>
+                <span className="text-xs text-emerald-100/75 font-medium">
+                  Founder, Gokul Veg Restaurant
+                </span>
+              </div>
+
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-1.5 text-xs text-[#e5c98d] hover:text-white font-semibold transition-colors underline underline-offset-4"
+              >
+                <span>Read Full Story &amp; Values</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
           </div>
         </div>

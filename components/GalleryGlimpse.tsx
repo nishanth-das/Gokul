@@ -19,9 +19,9 @@ export default function GalleryGlimpse() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-[#e5c98d] mb-1">
-              <span>♦</span>
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
               <span>Gallery</span>
-              <span>♦</span>
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
             </div>
             <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
               Photo Gallery
@@ -29,7 +29,7 @@ export default function GalleryGlimpse() {
           </div>
 
           <Link
-            href="/gallery/"
+            href="/gallery"
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#e5c98d] to-[#c9a35e] hover:brightness-110 text-[#04130f] font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-full shadow-gold transition-all shrink-0 self-start sm:self-auto"
           >
             <span>View Full Gallery ({GALLERY_ITEMS.length})</span>

@@ -12,7 +12,7 @@ export default function GalleryView() {
   const [activeId, setActiveId] = useState<number | null>(null);
 
   return (
-    <div className="min-h-screen bg-[#faf7f0] text-[#161e1b] flex flex-col">
+    <div className="min-h-screen bg-[#faf7f0] text-[#161e1b] flex flex-col pb-28 lg:pb-0">
       <Navbar />
 
       <section className="relative bg-gradient-to-br from-[#03110d] via-[#07221b] to-[#0d3b2f] text-white py-10 sm:py-14 border-b-2 border-[#c9a35e]/30 overflow-hidden">

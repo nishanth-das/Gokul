@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { UtensilsCrossed, Phone, MessageCircle, ShoppingBag } from 'lucide-react';
 import { MENU_ITEMS } from '@/data/menu-data';
 
@@ -23,13 +24,13 @@ export default function MobileBottomNav({
   return (
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#071f18]/95 backdrop-blur-lg border-t border-[#c9a35e]/30 px-3 py-2 shadow-2xl">
       <div className="flex items-center justify-around gap-2 max-w-md mx-auto">
-        <a
-          href="#menu"
+        <Link
+          href="/menu"
           className="flex flex-col items-center justify-center text-[#e5c98d] hover:text-white py-1 px-2 text-center"
         >
           <UtensilsCrossed className="w-5 h-5 text-[#c9a35e] mb-0.5" />
           <span className="text-[10px] font-semibold">Menu</span>
-        </a>
+        </Link>
 
         <a
           href="tel:+918732024422"

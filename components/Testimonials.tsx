@@ -31,9 +31,9 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.15em] uppercase text-[#9a7536] mb-2">
-            <span>♦</span>
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
             <span>Patron Accolades</span>
-            <span>♦</span>
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#04130f] mb-4">
             Praised by Food Lovers & Critics

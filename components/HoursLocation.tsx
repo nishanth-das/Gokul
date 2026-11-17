@@ -1,5 +1,6 @@
 import React from 'react';
-import { MapPin, Phone, MessageCircle, ExternalLink, Sunrise, Sun, UtensilsCrossed, Moon } from 'lucide-react';
+import Link from 'next/link';
+import { MapPin, Phone, MessageCircle, ExternalLink, Sunrise, Sun, UtensilsCrossed, Moon, ArrowRight } from 'lucide-react';
 
 export default function HoursLocation() {
   const shifts = [
@@ -14,9 +15,9 @@ export default function HoursLocation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-xl mx-auto mb-8 sm:mb-12">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-[#9a7536] mb-1">
-            <span>♦</span>
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
             <span>Visit & Delivery</span>
-            <span>♦</span>
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
           </div>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#04130f]">
             Hours & Location
@@ -74,7 +75,7 @@ export default function HoursLocation() {
                 <span>WhatsApp</span>
               </a>
               <a
-                href="https://maps.google.com/?q=Chitta+Ranjan+Road+Agartala+Tripura"
+                href="https://share.google/M9WrsvWS1dkh5skPU"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-xs font-bold border border-[#c9a35e] text-[#e5c98d] px-4 py-3 rounded-full"
@@ -85,13 +86,22 @@ export default function HoursLocation() {
             </div>
           </div>
 
-          <div className="lg:col-span-5 bg-[#103d31]/50 border border-[#c9a35e]/30 rounded-xl p-5 text-center">
-            <h4 className="font-serif text-base font-bold text-[#e5c98d] mb-1">
-              Central Agartala Location
-            </h4>
-            <p className="text-xs text-emerald-100/70 leading-relaxed">
-              Dine-in AC hall, takeaway counter, and 20-30 min express delivery on orders of ₹2,000+ within selected radius.
-            </p>
+          <div className="lg:col-span-5 bg-[#103d31]/50 border border-[#c9a35e]/30 rounded-xl p-5 text-center flex flex-col justify-between">
+            <div>
+              <h4 className="font-serif text-base font-bold text-[#e5c98d] mb-1">
+                Central Agartala Location
+              </h4>
+              <p className="text-xs text-emerald-100/70 leading-relaxed mb-3">
+                Dine-in AC hall, takeaway counter, and 20-30 min express delivery on orders of ₹2,000+ within selected radius.
+              </p>
+            </div>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-1.5 text-xs text-[#e5c98d] hover:text-white font-bold transition-colors underline underline-offset-4"
+            >
+              <span>View Map, Directions &amp; Reservations</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
         </div>
       </div>

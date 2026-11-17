@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 interface SignatureJewelsProps {
   onOpenSheet: (sheetNum: number) => void;
@@ -70,9 +72,9 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-xl mx-auto mb-8 sm:mb-12">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-[#9a7536] mb-1">
-            <span>♦</span>
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
             <span>Bestselling Delicacies</span>
-            <span>♦</span>
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
           </div>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#04130f]">
             Agartala's Iconic Bestsellers
@@ -124,6 +126,16 @@ export default function SignatureJewels({ onOpenSheet, onAddItem }: SignatureJew
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <Link
+            href="/signatures"
+            className="inline-flex items-center gap-2 bg-[#0b3127] hover:bg-[#c9a35e] text-white hover:text-[#04130f] font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full transition-all shadow-sm"
+          >
+            <span>Explore All Signatures with Full Stories</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </section>

@@ -13,9 +13,9 @@ export default function MenuBookGallery({ onOpenSheet }: MenuBookGalleryProps) {
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="text-center max-w-xl mx-auto mb-8 sm:mb-12">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-[#e5c98d] mb-1">
-            <span>♦</span>
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
             <span>Printed Menu Archives</span>
-            <span>♦</span>
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
           </div>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
             Official Menu Book

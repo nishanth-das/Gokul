@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Phone, Users, Shield, Sparkles } from 'lucide-react';
+import Link from 'next/link';
+import { Phone, Users, Shield, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function BanquetsSection() {
   const [formData, setFormData] = useState({
@@ -36,9 +37,9 @@ Please share customized royal banquet package rates.`;
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-6">
             <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-[#9a7536] mb-1">
-              <span>♦</span>
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
               <span>Hospitality</span>
-              <span>♦</span>
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#c9a35e]" />
             </div>
             
             <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#04130f] leading-snug mb-3">
@@ -83,13 +84,23 @@ Please share customized royal banquet package rates.`;
               </div>
             </div>
 
-            <a
-              href="tel:+918732024422"
-              className="inline-flex items-center gap-2 bg-[#0b3127] hover:bg-[#c9a35e] text-white hover:text-[#04130f] font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-full transition-all"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span>Call Banquet: +91 8732-024422</span>
-            </a>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="tel:+918732024422"
+                className="inline-flex items-center gap-2 bg-[#0b3127] hover:bg-[#c9a35e] text-white hover:text-[#04130f] font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-full transition-all"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span>Call Banquet: +91 8732-024422</span>
+              </a>
+
+              <Link
+                href="/banquets"
+                className="inline-flex items-center gap-1.5 text-xs text-[#0b3127] hover:text-[#9a7536] font-bold transition-colors underline underline-offset-4"
+              >
+                <span>View Full Packages &amp; Halls</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
           </div>
 
           <div className="lg:col-span-6">

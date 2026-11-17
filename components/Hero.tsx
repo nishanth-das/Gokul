@@ -1,6 +1,8 @@
+
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { ArrowRight, MessageCircle, Sparkles, Zap, ShieldCheck } from 'lucide-react';
 
 interface HeroProps {
@@ -45,13 +47,13 @@ export default function Hero({ onOpenSheet }: HeroProps) {
           </div>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 w-full sm:w-auto">
-            <a
-              href="#menu"
+            <Link
+              href="/menu"
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#e5c98d] to-[#c9a35e] hover:brightness-110 text-[#04130f] font-bold px-6 py-3.5 rounded-full shadow-gold transition-all text-xs sm:text-sm uppercase tracking-wider"
             >
               <span>Explore 151 Dishes</span>
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
 
             <a
               href="https://wa.me/918732024422?text=Hello%20Gokul%20Veg%20Restaurant,%20I%20would%20like%20to%20order%20delicious%20food."
@@ -100,13 +102,13 @@ export default function Hero({ onOpenSheet }: HeroProps) {
                 <span className="price-display font-sans text-xl sm:text-2xl font-bold text-[#e5c98d] tracking-tight tabular-nums">
                   ₹80 - ₹120
                 </span>
-                <a
-                  href="#menu"
+                <Link
+                  href="/menu"
                   className="inline-flex items-center gap-1.5 text-xs text-[#e5c98d] hover:text-white font-semibold transition-colors underline underline-offset-4"
                 >
                   <span>Explore Menu</span>
                   <ArrowRight className="w-3.5 h-3.5" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

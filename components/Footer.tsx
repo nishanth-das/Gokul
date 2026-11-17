@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { MapPin, Phone, Clock } from 'lucide-react';
 
 export default function Footer() {
@@ -8,13 +9,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 mb-10">
           <div className="lg:col-span-5">
             <div className="mb-3">
-              <img
-                src="/gokul-logo.webp"
-                alt="Gokul Veg Restaurant"
-                loading="lazy"
-                decoding="async"
-                className="h-11 sm:h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
-              />
+              <Link href="/">
+                <img
+                  src="/gokul-logo.webp"
+                  alt="Gokul Veg Restaurant"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-11 sm:h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.35)]"
+                />
+              </Link>
             </div>
             
             <p className="text-xs text-emerald-100/70 leading-relaxed mb-4 max-w-sm">
@@ -36,10 +39,12 @@ export default function Footer() {
               Quick Links
             </h5>
             <ul className="space-y-1.5 text-xs text-emerald-100/70">
-              <li><a href="/#menu" className="hover:text-[#e5c98d] transition-colors">Master Menu (151 Items)</a></li>
-              <li><a href="/#signatures" className="hover:text-[#e5c98d] transition-colors">Agartala&apos;s Bestsellers</a></li>
-              <li><a href="/gallery/" className="hover:text-[#e5c98d] transition-colors">Photo Gallery</a></li>
-              <li><a href="/#banquets" className="hover:text-[#e5c98d] transition-colors">Banquets &amp; Catering</a></li>
+              <li><Link href="/menu" className="hover:text-[#e5c98d] transition-colors">Master Menu (151 Items)</Link></li>
+              <li><Link href="/signatures" className="hover:text-[#e5c98d] transition-colors">Chef&apos;s Signatures</Link></li>
+              <li><Link href="/about" className="hover:text-[#e5c98d] transition-colors">About &amp; Founder</Link></li>
+              <li><Link href="/gallery" className="hover:text-[#e5c98d] transition-colors">Photo Gallery</Link></li>
+              <li><Link href="/banquets" className="hover:text-[#e5c98d] transition-colors">Banquets &amp; Catering</Link></li>
+              <li><Link href="/contact" className="hover:text-[#e5c98d] transition-colors">Hours &amp; Directions</Link></li>
             </ul>
           </div>
 
@@ -50,7 +55,14 @@ export default function Footer() {
             <div className="space-y-2 text-xs text-emerald-100/70">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#c9a35e] shrink-0 mt-0.5" />
-                <span>Chitta Ranjan Road, Agartala, Tripura</span>
+                <a
+                  href="https://share.google/M9WrsvWS1dkh5skPU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#e5c98d] transition-colors"
+                >
+                  Chitta Ranjan Road, Agartala, Tripura
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#c9a35e] shrink-0" />

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { CartProvider } from '@/context/CartContext';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gokulveg.pages.dev'),
@@ -66,7 +67,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans bg-[#faf7f0] text-[#161e1b] antialiased selection:bg-[#c9a35e] selection:text-[#04130f]">
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );
